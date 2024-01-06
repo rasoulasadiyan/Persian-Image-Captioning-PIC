@@ -1,3 +1,5 @@
+[![TensorFlow Version](https://img.shields.io/badge/TensorFlow-2.13.1-brightgreen)](https://www.tensorflow.org/)  [![Hazm Version](https://img.shields.io/badge/Hazm-0.9.4-blue)](https://github.com/roshan-research/hazm)   [![OpenCV Version](https://img.shields.io/badge/OpenCV-4.6.0.66-brown)](https://github.com/opencv/opencv-python) 
+
 # Persian Image Captioning (PIC)
 
 ## Overview
