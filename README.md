@@ -3,6 +3,10 @@
 # Persian Image Captioning (PIC)
 
 ## Overview
+This model leverages pre-trained weights from the EfficientNet model on ImageNet for the CNN part. In contrast, the Transformer component is trained from scratch to generate captions.
+Also the training dataset is 40K preprocessing images and captions from Coco Flicker Farsi dataset:
+
+![output](https://github.com/rasoulasadiyan/Persian-Image-Captioning-PIC/assets/100882487/e49530ac-e253-4ec2-b5ad-46857968b0d3)
 
 
 ## Contents
