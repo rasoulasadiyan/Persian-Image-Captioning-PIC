@@ -41,13 +41,5 @@ PIC model is designed with a three-part architecture, utilizing Convolutional Ne
    This model takes the encoder output and text data (sequences) as inputs. It is trained to generate captions by utilizing self-attention and cross-attention mechanisms. The decoder incorporates positional embeddings for sequence information and employs dropout layers for regularization.
 Models**: Utilize the latest advancements in deep learning for image captioning.
 
-## Inference
-model outputs:
-
-![predict01](https://github.com/rasoulasadiyan/Persian-Image-Captioning-PIC/assets/100882487/d56872f8-cf5b-40c8-b512-bec91af74944)
-
-![predict02](https://github.com/rasoulasadiyan/Persian-Image-Captioning-PIC/assets/100882487/56e89a0c-9857-409d-90bb-1ec3e762ca40)
-
-
 ### Improvment
 
