@@ -37,7 +37,6 @@ def longest_common_subsequence(seq1, seq2):
     return lcs
 
 def rouge_n(candidate, references, n=1):
-  try:
     candidate = tokenize(candidate)
     references = [tokenize(ref) for ref in references]
     
@@ -59,11 +58,7 @@ def rouge_n(candidate, references, n=1):
     
     return {'precision':precision, 'recall':recall}
 
-  except:
-    return {'precision': 0.0, 'recall': 0.0}
-
 def rouge_l(candidate, references):
-  try:
     candidate = tokenize(candidate)
     references = [tokenize(ref) for ref in references]
     
@@ -79,9 +74,6 @@ def rouge_l(candidate, references):
     recall = total_lcs_length / sum(len(ref) for ref in references) if references else 0
     
     return {'precision':precision, 'recall':recall}
-
-  except:
-    return {'precision': 0.0, 'recall': 0.0}
 
 def compute(candidate, references):
     return {

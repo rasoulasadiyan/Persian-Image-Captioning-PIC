@@ -45,11 +45,7 @@ def cider_score(consensus_matrix):
     return cider_score
 
 def compute(ref, gen, n=4):
-  try:
     refs = [ref]
     gens = [gen]
     consensus_matrix = compute_consensus_matrix(refs, gens, n)
     return cider_score(consensus_matrix)
-
-  except:
-    return 0.0
