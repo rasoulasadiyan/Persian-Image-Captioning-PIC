@@ -36,6 +36,7 @@ def brevity_penalty(candidate, references):
         return math.exp(1 - r_len / c_len)
 
 def bleu_score(candidate, references, weights=(0.25, 0.25, 0.25, 0.25)):
+  try:
     candidate = tokenize(candidate)
     references = [tokenize(ref) for ref in references]
     
@@ -51,6 +52,9 @@ def bleu_score(candidate, references, weights=(0.25, 0.25, 0.25, 0.25)):
     
     return bp * weighted_geometric_mean
 
+  except:
+    return 0.0
+
 def compute(candidate, references):
     scores = {}
     scores['bleu-1000'] = bleu_score(candidate, references, weights=(0.25,0,0,0))
@@ -62,3 +66,4 @@ def compute(candidate, references):
     scores['bleu-1111'] = bleu_score(candidate, references, weights=(0.25,0.25,0.25,0.25))
 
     return scores
+  
